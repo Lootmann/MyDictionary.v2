@@ -4,6 +4,7 @@ certifi==2022.5.18.1
 charset-normalizer==2.0.12
 idna==3.3
 iniconfig==1.1.1
+jstyleson==0.0.2
 lxml==4.9.0
 packaging==21.3
 pluggy==1.0.0
