@@ -17,9 +17,11 @@ def fetch_word(word: str):
     fetch_data = requests.get(WEBLIO_URL.format(word=word))
 
     try:
-        # NOTE: This is very rare case the weblio site is down
+        # NOTE: This is very rare case Because when this raises Error the weblio site is down.
         fetch_data.raise_for_status()
     except requests.exceptions.HTTPError as e:
         logger.debug(e)
+    except Exception as e:
+        logger.debug(f"Another Exception: {e}")
 
     return fetch_data
