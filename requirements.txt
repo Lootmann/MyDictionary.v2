@@ -9,8 +9,10 @@ lxml==4.9.0
 packaging==21.3
 pluggy==1.0.0
 py==1.11.0
+Pygments==2.12.0
 pyparsing==3.0.9
 pytest==7.1.2
+python-fire==0.1.0
 requests==2.27.1
 soupsieve==2.3.2.post1
 tomli==2.0.1
