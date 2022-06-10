@@ -19,7 +19,6 @@ def user_input(argv: List[str]) -> str:
         nargs="+",
         type=str,
         help="input english word that you want to know the definition",
-        default="noargs",
     )
 
     # get command-line args from sys.argv automatically
