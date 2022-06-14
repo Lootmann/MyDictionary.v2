@@ -34,7 +34,7 @@ def main():
 
     print(f">>> fetch data: {word_name} from WEBLIO")
     fetch_data = api.fetch_word(word_name)
-    parsed_dict = Parse.parse(fetch_data.text)
+    parsed_dict = Parse.parse(word_name, fetch_data.text)
 
     print(f">>> create cache: {word_name}.cache")
     Cache.create_cache(word_name, parsed_dict)
