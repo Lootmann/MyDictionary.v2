@@ -27,4 +27,17 @@ def user_input(argv: List[str]) -> str:
 
 
 def prettify(word_info: dict) -> None:
-    print(word_info)
+    """prettify print word_info
+
+    :param word_info: dict - key: values are followings
+        "word_name": str
+        "main_meaning": str
+        "conjugation_table": str when word has verb
+        "word_meaning": list
+    :return: None - print info to stdout console
+    """
+    print("word_name : ", word_info["word_name"], end="\n\n")
+    print("main_meaning : ", word_info["main_meaning"], end="\n\n")
+
+    for meaning in word_info["word_meaning"]:
+        print(" ".join(meaning))

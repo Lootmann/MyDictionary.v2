@@ -70,7 +70,7 @@ class Cache:
         path = cls.cache_path(word_name)
 
         with path.open("w", encoding="utf-8") as f:
-            json.dump(word_info, f)
+            json.dump(word_info, f, ensure_ascii=False)
 
     @classmethod
     def load_cache(cls, word_name: str) -> dict:

@@ -38,6 +38,7 @@ My Goals are to create readable main.py flow, and pythonic classes, APIs.
 ```json
 {
   "word_name": "spell",
+  "main_meaning": "綴り",
   "type_of_speech": {
     "verb": {
       "": ""
