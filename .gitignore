@@ -281,4 +281,6 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/pycharm+all,python,pythonvanilla
 
 htmls/*
+# after prettier
+examples/*
 *.log
