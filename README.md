@@ -32,3 +32,22 @@ My Goals are to create readable main.py flow, and pythonic classes, APIs.
    create 'word_name'.cache using parsed HTML
 
    4.3 show this cache END :^)
+
+## cache json file structure
+
+```json
+{
+  "word_name": "spell",
+  "type_of_speech": {
+    "verb": {
+      "": ""
+    },
+    "adj": {
+      "": ""
+    },
+    "noun": {
+      "": ""
+    }
+  }
+}
+```
